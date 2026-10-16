@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>College Tech Fest</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  
+  </head>
+
+  <body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-white">
+    <!-- Navbar -->
+    <header class="border-b border-gray-200 dark:border-gray-800">
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5"
+      >
+        <a
+          href="index.html"
+          class="text-2xl font-extrabold tracking-wide text-violet-600"
+        >
+          NEXORA<span class="text-orange-500">.</span>
+        </a>
+
+        <div class="hidden items-center gap-7 md:flex">
+          <a href="index.html" class="text-violet-600">Home</a>
+          <a href="schedule.html" class="hover:text-violet-600">Schedule</a>
+          <a href="speakers.html" class="hover:text-violet-600">Speakers</a>
+          <a href="#tickets" class="hover:text-violet-600">Tickets</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            class="rounded-lg border border-gray-300 px-3 py-2 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800"
+          >
+            ☀️ / 🌙
+          </button>
+
+          <a
+            href="register.html"
+            class="rounded-lg bg-violet-600 px-4 py-2 font-semibold text-white hover:bg-violet-700"
+          >
+            Register
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="bg-gradient-to-br from-violet-100 via-white to-orange-100 dark:from-gray-950 dark:via-violet-950 dark:to-gray-900"
+      >
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 md:grid-cols-2 md:py-28"
+        >
+          <div>
+            <p
+              class="mb-5 inline-block rounded-full bg-violet-200 px-4 py-2 text-sm font-semibold text-violet-800 dark:bg-violet-900 dark:text-violet-200"
+            >
+              THE ULTIMATE COLLEGE TECH FEST
+            </p>
+
+            <h1
+              class="text-5xl font-black leading-tight sm:text-6xl lg:text-7xl"
+            >
+              Think Big.<br />
+              <span class="text-violet-600">Build Beyond.</span>
+            </h1>
+
+            <p
+              class="mt-6 max-w-lg text-lg leading-8 text-gray-600 dark:text-gray-300"
+            >
+              One campus. Endless ideas. Join innovators, coders and creators
+              for two unforgettable days of technology and creativity.
+            </p>
+
+            <div class="mt-7 flex flex-wrap gap-4 text-sm font-medium">
+              <p>📅 December 12–13, 2026</p>
+              <p>📍 Bhubaneswar, India</p>
+            </div>
+
+            <div class="mt-9 flex flex-wrap gap-4">
+              <a
+                href="register.html"
+                class="rounded-lg bg-violet-600 px-7 py-3 font-semibold text-white hover:bg-violet-700"
+              >
+                Grab Your Pass →
+              </a>
+
+              <a
+                href="schedule.html"
+                class="rounded-lg border border-gray-400 px-7 py-3 font-semibold hover:bg-white dark:border-gray-600 dark:hover:bg-gray-800"
+              >
+                Explore Events
+              </a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80"
+              alt="Technology conference with a large audience attending an event"
+              class="h-80 w-full rounded-2xl object-cover shadow-2xl md:h-[440px]"
+            />
+
+            <div
+              class="absolute -bottom-5 -left-3 rounded-xl bg-white p-4 shadow-xl dark:bg-gray-800 sm:-left-6"
+            >
+              <p class="text-2xl font-extrabold text-violet-600">48+</p>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                Hours of Innovation
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Event Highlights -->
+      <section class="bg-violet-700 text-white">
+        <div
+          class="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-5 py-8 text-center md:grid-cols-4"
+        >
+          <div>
+            <p class="text-3xl font-extrabold">20+</p>
+            <p class="mt-1 text-sm text-violet-200">Exciting Events</p>
+          </div>
+
+          <div>
+            <p class="text-3xl font-extrabold">15+</p>
+            <p class="mt-1 text-sm text-violet-200">Expert Speakers</p>
+          </div>
+
+          <div>
+            <p class="text-3xl font-extrabold">500+</p>
+            <p class="mt-1 text-sm text-violet-200">Expected Participants</p>
+          </div>
+
+          <div>
+            <p class="text-3xl font-extrabold">2 Days</p>
+            <p class="mt-1 text-sm text-violet-200">Nonstop Action</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Events -->
+      <section id="events" class="mx-auto max-w-7xl px-5 py-20">
+        <div class="mb-12 text-center">
+          <p class="font-bold uppercase tracking-widest text-violet-600">
+            What's Happening
+          </p>
+          <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">
+            Explore the Experience
+          </h2>
+          <p class="mx-auto mt-4 max-w-xl text-gray-600 dark:text-gray-400">
+            Discover new skills, challenge yourself and connect with people who
+            love technology as much as you do.
+          </p>
+        </div>
+
+        <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+          <article
+            class="overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+              alt="Students collaborating on computers during a coding session"
+              class="h-52 w-full object-cover"
+            />
+
+            <div class="p-6">
+              <p class="text-sm font-semibold text-violet-600">01 / COMPETE</p>
+              <h3 class="mt-3 text-xl font-bold">Code Clash</h3>
+              <p class="mt-3 leading-7 text-gray-600 dark:text-gray-400">
+                Solve problems, race against the clock and show off your
+                programming skills.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80"
+              alt="A team sharing ideas during a creative workshop"
+              class="h-52 w-full object-cover"
+            />
+
+            <div class="p-6">
+              <p class="text-sm font-semibold text-orange-500">02 / CREATE</p>
+              <h3 class="mt-3 text-xl font-bold">Innovation Lab</h3>
+              <p class="mt-3 leading-7 text-gray-600 dark:text-gray-400">
+                Learn from mentors and turn your creative ideas into exciting
+                projects.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
+              alt="Gaming competition with illuminated computer screens"
+              class="h-52 w-full object-cover"
+            />
+
+            <div class="p-6">
+              <p class="text-sm font-semibold text-pink-600">03 / PLAY</p>
+              <h3 class="mt-3 text-xl font-bold">Game Arena</h3>
+              <p class="mt-3 leading-7 text-gray-600 dark:text-gray-400">
+                Team up with friends and compete for glory in our gaming
+                challenges.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Tickets -->
+      <section id="tickets" class="bg-gray-100 py-20 dark:bg-gray-900">
+        <div class="mx-auto max-w-7xl px-5">
+          <div class="mb-12 text-center">
+            <p class="font-bold uppercase tracking-widest text-violet-600">
+              Choose Your Pass
+            </p>
+            <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">
+              Get Your Ticket
+            </h2>
+          </div>
+
+          <div class="grid gap-7 md:grid-cols-3">
+            <article
+              class="rounded-2xl border border-gray-200 bg-white p-7 dark:border-gray-700 dark:bg-gray-950"
+            >
+              <h3 class="text-xl font-bold">Basic</h3>
+              <p class="mt-4 text-4xl font-extrabold">₹199</p>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">
+                For curious minds.
+              </p>
+
+              <ul class="mt-6 space-y-3 text-sm">
+                <li>✓ General event entry</li>
+                <li>✓ Attend open sessions</li>
+                <li>✓ Digital participation badge</li>
+              </ul>
+
+              <a
+                href="register.html"
+                class="mt-8 block rounded-lg border border-violet-600 py-3 text-center font-semibold text-violet-600 hover:bg-violet-50 dark:hover:bg-gray-800"
+              >
+                Choose Basic
+              </a>
+            </article>
+
+            <article
+              class="rounded-2xl border-2 border-violet-600 bg-white p-7 shadow-xl dark:bg-gray-950"
+            >
+              <p
+                class="inline-block rounded-full bg-violet-100 px-3 py-1 text-xs font-bold text-violet-700 dark:bg-violet-900 dark:text-violet-200"
+              >
+                MOST POPULAR
+              </p>
+
+              <h3 class="mt-4 text-xl font-bold">Pro</h3>
+              <p class="mt-4 text-4xl font-extrabold">₹499</p>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">
+                For active participants.
+              </p>
+
+              <ul class="mt-6 space-y-3 text-sm">
+                <li>✓ Everything in Basic</li>
+                <li>✓ Competition entry</li>
+                <li>✓ Workshop access</li>
+              </ul>
+
+              <a
+                href="register.html"
+                class="mt-8 block rounded-lg bg-violet-600 py-3 text-center font-semibold text-white hover:bg-violet-700"
+              >
+                Choose Pro
+              </a>
+            </article>
+
+            <article
+              class="rounded-2xl border border-gray-200 bg-white p-7 dark:border-gray-700 dark:bg-gray-950"
+            >
+              <h3 class="text-xl font-bold">VIP</h3>
+              <p class="mt-4 text-4xl font-extrabold">₹999</p>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">
+                For the ultimate experience.
+              </p>
+
+              <ul class="mt-6 space-y-3 text-sm">
+                <li>✓ Everything in Pro</li>
+                <li>✓ Priority seating</li>
+                <li>✓ Speaker interaction</li>
+              </ul>
+
+              <a
+                href="register.html"
+                class="mt-8 block rounded-lg border border-violet-600 py-3 text-center font-semibold text-violet-600 hover:bg-violet-50 dark:hover:bg-gray-800"
+              >
+                Choose VIP
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Venue -->
+      <section
+        id="venue"
+        class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-20 md:grid-cols-2"
+      >
+        <div>
+          <p class="font-bold uppercase tracking-widest text-violet-600">
+            Find Us Here
+          </p>
+          <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">
+            Meet Us at the Fest
+          </h2>
+
+          <p class="mt-5 leading-8 text-gray-600 dark:text-gray-400">
+            Join us at our college campus in Bhubaneswar for two days of
+            creativity, collaboration and unforgettable experiences.
+          </p>
+
+          <p class="mt-5 font-semibold">📍 Bhubaneswar, Odisha, India</p>
+          <p class="mt-2 text-gray-600 dark:text-gray-400">
+            December 12–13, 2026
+          </p>
+        </div>
+
+        <div class="overflow-hidden rounded-2xl">
+          <iframe
+            title="Map showing Bhubaneswar, Odisha"
+            src="https://maps.google.com/maps?q=Bhubaneswar%2C%20Odisha&t=&z=12&ie=UTF8&iwloc=&output=embed"
+            class="h-80 w-full border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Sponsors -->
+      <section
+        class="border-y border-gray-200 bg-gray-50 py-12 dark:border-gray-800 dark:bg-gray-900"
+      >
+        <div class="mx-auto max-w-7xl px-5 text-center">
+          <h2 class="text-sm font-bold uppercase tracking-widest text-gray-500">
+            Powered by Our Partners
+          </h2>
+
+          <div
+            class="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6"
+          >
+            <p class="text-xl font-extrabold text-gray-500">TECHNOVA</p>
+            <p class="text-xl font-extrabold text-violet-600">
+              code<span class="text-orange-500">X</span>
+            </p>
+            <p class="text-xl font-extrabold text-gray-500">INNOVATE</p>
+            <p class="text-xl font-extrabold text-gray-500">NEXTGEN</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-8 text-white">
+      <div
+        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-center sm:flex-row"
+      >
+        <a href="index.html" class="text-xl font-extrabold">
+          NEXORA<span class="text-orange-500">.</span>
+        </a>
+
+        <p class="text-sm text-gray-400">
+          © 2026 NEXORA Tech Fest. Student project.
+        </p>
+
+        <a
+          href="register.html"
+          class="text-sm text-violet-300 hover:text-white"
+        >
+          Join the Fest →
+        </a>
+      </div>
+    </footer>
+
+    <!-- Dark Mode Toggle -->
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+
+      themeToggle.addEventListener("click", function () {
+        document.documentElement.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
