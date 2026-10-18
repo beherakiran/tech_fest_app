@@ -47,3 +47,11 @@ This is a responsive college tech fest website designed to provide information a
 
 ![Schedule Page](screenshots/schedule.png)
 
+## How to Run Locally
+
+1. Clone the repository.
+2. Open the project folder in VS Code.
+3. Install dependencies using `npm install`.
+4. Start the development server using `npm run dev`.
+5. Open the local URL displayed in the terminal.
+
