@@ -1,9 +1,243 @@
-<!-- entire site styled with tailwind utitlities (custom css only where justified)
-dark mode toggle or prefer color scheme support 
 
-responsive 375 768 1280 
-no horizontal scroll
-image scale properly
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-10 commits 2 branches min 1 pull request 
-readme with live link and screenshots -->
+    <title>Schedule |Tech Fest</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+
+  <body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-white">
+    <!-- Navbar -->
+    <header class="border-b border-gray-200 dark:border-gray-800">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5">
+        <a href="index.html" class="text-2xl font-extrabold tracking-wide text-violet-600">
+          NEXORA<span class="text-orange-500">.</span>
+        </a>
+
+        <div class="hidden items-center gap-7 md:flex">
+          <a href="index.html" class="hover:text-violet-600">Home</a>
+          <a href="schedule.html" class="text-violet-600">Schedule</a>
+          <a href="speakers.html" class="hover:text-violet-600">Speakers</a>
+          <a href="index.html#tickets" class="hover:text-violet-600">Tickets</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            class="rounded-lg border border-gray-300 px-3 py-2 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800"
+          >
+            ☀️ / 🌙
+          </button>
+
+          <a href="register.html" class="rounded-lg bg-violet-600 px-4 py-2 font-semibold text-white hover:bg-violet-700">
+            Register
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Heading -->
+      <section class="bg-gradient-to-br from-violet-100 via-white to-orange-100 px-5 py-16 text-center dark:from-gray-950 dark:via-violet-950 dark:to-gray-900 sm:py-20">
+        <p class="font-bold uppercase tracking-widest text-violet-600">
+          December 12–13, 2026
+        </p>
+
+        <h1 class="mt-4 text-4xl font-black sm:text-5xl">
+          Event <span class="text-violet-600">Schedule.</span>
+        </h1>
+
+        <p class="mx-auto mt-5 max-w-2xl leading-7 text-gray-600 dark:text-gray-300">
+          Two days filled with coding challenges, creative workshops,
+          inspiring talks and exciting competitions.
+        </p>
+      </section>
+
+      <!-- Day One -->
+      <section class="mx-auto max-w-5xl px-5 py-16">
+        <div class="mb-8">
+          <p class="font-bold uppercase tracking-widest text-violet-600">
+            Day 01
+          </p>
+          <h2 class="mt-2 text-3xl font-extrabold">December 12, 2026</h2>
+          <p class="mt-2 text-gray-600 dark:text-gray-400">
+            Opening, learning and innovation.
+          </p>
+        </div>
+
+        <div class="space-y-5">
+          <article class="rounded-xl border border-gray-200 p-5 dark:border-gray-800 sm:flex sm:items-start sm:gap-8">
+            <p class="mb-3 font-bold text-violet-600 sm:mb-0 sm:w-32 sm:shrink-0">
+              9:00 AM
+            </p>
+            <div>
+              <h3 class="text-xl font-bold">Opening Ceremony</h3>
+              <p class="mt-2 leading-7 text-gray-600 dark:text-gray-400">
+                Welcome participants and kick off the NEXORA Tech Fest.
+              </p>
+            </div>
+          </article>
+
+          <article class="rounded-xl border border-gray-200 p-5 dark:border-gray-800 sm:flex sm:items-start sm:gap-8">
+            <p class="mb-3 font-bold text-violet-600 sm:mb-0 sm:w-32 sm:shrink-0">
+              10:00 AM
+            </p>
+            <div>
+              <h3 class="text-xl font-bold">Code Clash</h3>
+              <p class="mt-2 leading-7 text-gray-600 dark:text-gray-400">
+                Put your programming and problem-solving skills to the test.
+              </p>
+            </div>
+          </article>
+
+          <article class="rounded-xl border border-gray-200 p-5 dark:border-gray-800 sm:flex sm:items-start sm:gap-8">
+            <p class="mb-3 font-bold text-violet-600 sm:mb-0 sm:w-32 sm:shrink-0">
+              12:00 PM
+            </p>
+            <div>
+              <h3 class="text-xl font-bold">Innovation Workshop</h3>
+              <p class="mt-2 leading-7 text-gray-600 dark:text-gray-400">
+                Explore new ideas and learn through hands-on activities.
+              </p>
+            </div>
+          </article>
+
+          <article class="rounded-xl border border-gray-200 p-5 dark:border-gray-800 sm:flex sm:items-start sm:gap-8">
+            <p class="mb-3 font-bold text-violet-600 sm:mb-0 sm:w-32 sm:shrink-0">
+              2:00 PM
+            </p>
+            <div>
+              <h3 class="text-xl font-bold">Gaming Competition</h3>
+              <p class="mt-2 leading-7 text-gray-600 dark:text-gray-400">
+                Team up with friends and compete in the Game Arena.
+              </p>
+            </div>
+          </article>
+
+          <article class="rounded-xl border border-gray-200 p-5 dark:border-gray-800 sm:flex sm:items-start sm:gap-8">
+            <p class="mb-3 font-bold text-violet-600 sm:mb-0 sm:w-32 sm:shrink-0">
+              4:00 PM
+            </p>
+            <div>
+              <h3 class="text-xl font-bold">Day One Wrap-Up</h3>
+              <p class="mt-2 leading-7 text-gray-600 dark:text-gray-400">
+                Celebrate the day's activities and connect with fellow participants.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Day Two -->
+      <section class="bg-gray-100 py-16 dark:bg-gray-900">
+        <div class="mx-auto max-w-5xl px-5">
+          <div class="mb-8">
+            <p class="font-bold uppercase tracking-widest text-orange-500">
+              Day 02
+            </p>
+            <h2 class="mt-2 text-3xl font-extrabold">December 13, 2026</h2>
+            <p class="mt-2 text-gray-600 dark:text-gray-400">
+              Ideas, presentations and celebrations.
+            </p>
+          </div>
+
+          <div class="space-y-5">
+            <article class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-gray-950 sm:flex sm:items-start sm:gap-8">
+              <p class="mb-3 font-bold text-orange-500 sm:mb-0 sm:w-32 sm:shrink-0">
+                9:30 AM
+              </p>
+              <div>
+                <h3 class="text-xl font-bold">Expert Talks</h3>
+                <p class="mt-2 leading-7 text-gray-600 dark:text-gray-400">
+                  Hear fresh perspectives on technology and innovation.
+                </p>
+              </div>
+            </article>
+
+            <article class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-gray-950 sm:flex sm:items-start sm:gap-8">
+              <p class="mb-3 font-bold text-orange-500 sm:mb-0 sm:w-32 sm:shrink-0">
+                11:00 AM
+              </p>
+              <div>
+                <h3 class="text-xl font-bold">Project Showcase</h3>
+                <p class="mt-2 leading-7 text-gray-600 dark:text-gray-400">
+                  Discover student projects and creative solutions.
+                </p>
+              </div>
+            </article>
+
+            <article class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-gray-950 sm:flex sm:items-start sm:gap-8">
+              <p class="mb-3 font-bold text-orange-500 sm:mb-0 sm:w-32 sm:shrink-0">
+                1:00 PM
+              </p>
+              <div>
+                <h3 class="text-xl font-bold">Final Rounds</h3>
+                <p class="mt-2 leading-7 text-gray-600 dark:text-gray-400">
+                  Watch finalists compete and present their best work.
+                </p>
+              </div>
+            </article>
+
+            <article class="rounded-xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-gray-950 sm:flex sm:items-start sm:gap-8">
+              <p class="mb-3 font-bold text-orange-500 sm:mb-0 sm:w-32 sm:shrink-0">
+                3:00 PM
+              </p>
+              <div>
+                <h3 class="text-xl font-bold">Awards Ceremony</h3>
+                <p class="mt-2 leading-7 text-gray-600 dark:text-gray-400">
+                  Celebrate participants, announce winners and close the fest.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration Call to Action -->
+      <section class="px-5 py-16 text-center">
+        <h2 class="text-3xl font-extrabold">Ready to Join NEXORA?</h2>
+        <p class="mt-4 text-gray-600 dark:text-gray-400">
+          Get your pass and be part of the experience.
+        </p>
+        <a href="register.html" class="mt-7 inline-block rounded-lg bg-violet-600 px-7 py-3 font-semibold text-white hover:bg-violet-700">
+          Register Now →
+        </a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-8 text-white">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-center sm:flex-row">
+        <a href="index.html" class="text-xl font-extrabold">
+          NEXORA<span class="text-orange-500">.</span>
+        </a>
+        <p class="text-sm text-gray-400">
+          © 2026 NEXORA Tech Fest. Student project.
+        </p>
+        <a href="register.html" class="text-sm text-violet-300 hover:text-white">
+          Join the Fest →
+        </a>
+      </div>
+    </footer>
+
+    <!-- Theme Toggle -->
+    <script>
+      const themeToggle = document.getElementById("themeToggle");
+
+      themeToggle.addEventListener("click", function () {
+        document.documentElement.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
