@@ -33,25 +33,39 @@ This is a responsive college tech fest website designed to provide information a
 
 ### Home Page
 
-![Home Page](screenshots/home.png)
+![Home Page](images/index.png)
 
 ### Speakers Page
 
-![Speakers Page](screenshots/speakers.png)
+![Speakers Page](images/speakers.png)
 
 ### Register Page
 
-![Register Page](screenshots/register.png)
+![Register Page](images/register.png)
 
 ### Schedule Page
 
-![Schedule Page](screenshots/schedule.png)
+![Schedule Page](images/schedule.png)
+
+### Tickets
+![Tickets](images/tickets.png)
+
+### Map
+![Map/Location](images/map.png)
 
 ## How to Run Locally
 
-1. Clone the repository.
+1. Clone the repository:
+
+   bash
+   git clone https://github.com/beherakiran/tech_fest_app.git
+   
+
 2. Open the project folder in VS Code.
-3. Install dependencies using `npm install`.
-4. Start the development server using `npm run dev`.
-5. Open the local URL displayed in the terminal.
+
+3. Open `index.html` in your browser to view the website.
+
+   Alternatively, use the **Live Server** extension in VS Code for a better development experience.
+
+
 
