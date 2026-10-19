@@ -25,10 +25,6 @@ This is a responsive college tech fest website designed to provide information a
 2. Register
 3. Speakers
 4. Schedule
-
-## Live Demo
-
-
 ## Screenshots
 
 ### Home Page
