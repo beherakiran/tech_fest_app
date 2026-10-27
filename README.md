@@ -6,7 +6,7 @@ This is a responsive college tech fest website designed to provide information a
 
 ## Live Demo
 
-[View the Live Website]()
+[View the Live Website](https://techfestapp-woad.vercel.app/)
 
 ## Features
 
@@ -56,9 +56,9 @@ This is a responsive college tech fest website designed to provide information a
 
 1. Clone the repository:
 
-   ```bash
+   bash
    git clone https://github.com/beherakiran/tech_fest_app.git
-   ```
+   
 
 2. Open the project folder in VS Code.
 
