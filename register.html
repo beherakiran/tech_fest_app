@@ -17,22 +17,23 @@
     class="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-white"
   >
     <!-- Navbar -->
-   <header class="border-b border-gray-200 dark:border-gray-800">
+   <header
+  class="sticky top-0 z-50 border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950"
+>
   <nav
     class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-5"
   >
     <a
       href="index.html"
-      class="text-2xl font-extrabold tracking-wide text-violet-600"
+      class="text-2xl font-extrabold tracking-wide text-violet-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600"
     >
       NEXORA<span class="text-orange-500">.</span>
     </a>
 
     <div class="flex flex-col items-center gap-3 sm:flex-row sm:gap-7">
-      <a href="index.html" class="text-violet-600">Home</a>
-      <a href="schedule.html" class="hover:text-violet-600">Schedule</a>
-      <a href="speakers.html" class="hover:text-violet-600">Speakers</a>
-      <a href="#tickets" class="hover:text-violet-600">Tickets</a>
+      <a href="index.html" class="hover:text-violet-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Home</a>
+      <a href="schedule.html" class="hover:text-violet-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Schedule</a>
+      <a href="speakers.html" class="hover:text-violet-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Speakers</a>
     </div>
 
     <div class="flex flex-col items-center gap-3 sm:flex-row">
@@ -40,14 +41,14 @@
         id="themeToggle"
         type="button"
         aria-label="Toggle dark mode"
-        class="rounded-lg border border-gray-300 px-3 py-2 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800"
+        class="rounded-lg border border-gray-300 px-3 py-2 hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600"
       >
         ☀️ / 🌙
       </button>
 
       <a
         href="register.html"
-        class="rounded-lg bg-violet-600 px-4 py-2 font-semibold text-white hover:bg-violet-700"
+        class="rounded-lg bg-violet-600 px-4 py-2 font-semibold text-white hover:bg-violet-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600"
       >
         Register
       </a>
@@ -83,7 +84,7 @@
             name="name"
             placeholder="Enter your full name"
             required
-            class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 dark:border-gray-700 dark:bg-gray-950 dark:text-white"
+            class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 dark:border-gray-700 dark:bg-gray-950 dark:text-white focus-visible:ring-2 focus-visible:ring-violet-600 "
           />
         </div>
 
@@ -97,7 +98,7 @@
             name="email"
             placeholder="Enter your email"
             required
-            class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 dark:border-gray-700 dark:bg-gray-950 dark:text-white"
+            class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 dark:border-gray-700 dark:bg-gray-950 dark:text-white focus-visible:ring-2 focus-visible:ring-violet-600"
           />
         </div>
 
@@ -111,7 +112,7 @@
             name="college"
             placeholder="Enter your college name"
             required
-            class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 dark:border-gray-700 dark:bg-gray-950 dark:text-white"
+            class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 dark:border-gray-700 dark:bg-gray-950 dark:text-white focus-visible:ring-2 focus-visible:ring-violet-600"
           />
         </div>
 
@@ -125,31 +126,31 @@
             name="phone"
             placeholder="Enter your phone number"
             required
-            class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 dark:border-gray-700 dark:bg-gray-950 dark:text-white"
+            class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 dark:border-gray-700 dark:bg-gray-950 dark:text-white focus-visible:ring-2 focus-visible:ring-violet-600"
           />
         </div>
 
         <!-- Ticket-->
-        <fieldset>
-          <legend class="mb-3 font-medium">Choose Your Ticket</legend>
+    <section>
+  <h3 class="mb-3 font-medium">Choose Your Ticket</h3>
 
-          <div class="space-y-3">
-            <label class="flex items-center gap-3">
-              <input type="radio" name="ticket" value="Basic" required />
-              <span>Basic — ₹199</span>
-            </label>
+  <div class="space-y-3">
+    <label class="flex items-center gap-3">
+      <input type="radio" name="ticket" value="Basic" required />
+      <span>Basic — ₹199</span>
+    </label>
 
-            <label class="flex items-center gap-3">
-              <input type="radio" name="ticket" value="Pro" />
-              <span>Pro — ₹499</span>
-            </label>
+    <label class="flex items-center gap-3">
+      <input type="radio" name="ticket" value="Pro" />
+      <span>Pro — ₹499</span>
+    </label>
 
-            <label class="flex items-center gap-3">
-              <input type="radio" name="ticket" value="VIP" />
-              <span>VIP — ₹999</span>
-            </label>
-          </div>
-        </fieldset>
+    <label class="flex items-center gap-3">
+      <input type="radio" name="ticket" value="VIP" />
+      <span>VIP — ₹999</span>
+    </label>
+  </div>
+</section>
 
         <!-- T&Cs-->
         <div>
@@ -163,7 +164,7 @@
 
         <button
           type="submit"
-          class="w-full rounded-lg bg-violet-600 px-6 py-3 font-semibold text-white hover:bg-violet-700"
+          class="w-full rounded-lg bg-violet-600 px-6 py-3 font-semibold text-white hover:bg-violet-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600"
         >
           Complete Registration
         </button>
